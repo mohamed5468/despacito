@@ -1,61 +1,61 @@
 {
   "products": [
-    {
-      "id": 1,
-      "category": "بالقطعة",
-      "name": "فستقية",
-      "price": 25,
-      "image": "assets/images/mawlid.jpg",
-      "badge": "مميز"
-    },
-    {
-      "id": 2,
-      "category": "بالقطعة",
-      "name": "كاجو",
-      "price": 30,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 3,
-      "category": "بالقطعة",
-      "name": "لوزية",
-      "price": 35,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 4,
-      "category": "بالقطعة",
-      "name": "بندقية",
-      "price": 20,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 5,
-      "category": "بالقطعة",
-      "name": "لدية",
-      "price": 18,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 6,
-      "category": "بالقطعة",
-      "name": "قرص مخصوص مكسرات",
-      "price": 45,
-      "image": "assets/images/mawlid.jpg",
-      "badge": "فاخر"
-    },
-    {
-      "id": 7,
-      "category": "بالقطعة",
-      "name": "ساندويتش جوز هند زبيب",
-      "price": 28,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
+   {
+  "id": 1,
+  "category": "بالقطعة",
+  "name": "فستقية",
+  "price": 120,
+  "image": "assets/images/mawlid.jpg",
+  "badge": "مميز"
+},
+{
+  "id": 2,
+  "category": "بالقطعة",
+  "name": "كاجو",
+  "price": 80,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 3,
+  "category": "بالقطعة",
+  "name": "لوزية",
+  "price": 70,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 4,
+  "category": "بالقطعة",
+  "name": "بندقية",
+  "price": 80,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 5,
+  "category": "بالقطعة",
+  "name": "حمام مكسرات جامبو",
+  "price": 55,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 6,
+  "category": "بالقطعة",
+  "name": "لديدة مكسرات جامبو",
+  "price": 55,
+  "image": "assets/images/mawlid.jpg",
+  "badge": "فاخر"
+},
+{
+  "id": 7,
+  "category": "بالقطعة",
+  "name": "قرص مخصوص مكسرات",
+  "price": 55,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
     {
       "id": 8,
       "category": "بالقطعة",
