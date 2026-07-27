@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despacito | Luxury Patisserie</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="tailwind.config.js"></script>
+</head>
+<body class="font-Aref Ruqaa bg-background text-primary overflow-x-hidden" style="font-family: 'Aref Ruqaa', serif;">
+<div id="loader" class="fixed inset-0 z-[100] bg-background flex flex-col items-center justify-center">
+
+    <!-- Logo -->
+    <div
+            class="w-40 h-40  bg-primary opacity-0 scale-75 preloader-logo"
+            style="
+            -webkit-mask: url('./assets/images/despacito-logo.png') center/contain no-repeat;
+            -webkit-mask-size: contain;
+            mask: url('./assets/images/despacito-logo.png') center/contain no-repeat;
+            mask-size: contain;
+        ">
+    </div>
+
+    <!-- Loading Bar -->
+    <div class="w-48 h-1 bg-rose-light rounded-full mt-8 overflow-hidden">
+        <div class="preloader-bar h-full bg-gold origin-left scale-x-0"></div>
+    </div>
+
+</div>
+
+<!-- Navbar -->
+<nav id="navbar" class="glass-nav fixed top-0 left-0 right-0 z-50 py-5 px-6 md:px-12 transition-all duration-500">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+            <div
+                    class="w-20 h-10 bg-primary"
+                    style="
+                    -webkit-mask: url('./assets/images/despacito-logo.png') center/contain no-repeat;
+                    mask: url('./assets/images/despacito-logo.png') center/contain no-repeat;
+                    height: 50px;
+                    width: 110px;
+                    object-fit: fill;
+                ">
+            </div>
+        </a>
+
+        <!-- Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+            <a href="#hero" class="nav-link-custom relative text-sm font-medium text-graystone hover:text-primary transition-colors">الرئيسية</a>
+            <a href="#products-section" class="nav-link-custom relative text-sm font-medium text-graystone hover:text-primary transition-colors scroll-smooth">حلاوة المولد</a>
+            <a href="#branches-section" class="nav-link-custom relative text-sm font-medium text-graystone hover:text-primary transition-colors">فروعنا</a>
+            <a href="#contact" class="nav-link-custom relative text-sm font-medium text-graystone hover:text-primary transition-colors">تواصل</a>
+        </div>
+
+        <!-- Cart -->
+        <div class="flex items-center gap-4">
+            <button onclick="openCart()" class="relative p-2 text-primary hover:text-seasonal-gold transition-colors magnetic-element">
+                <i class="fas fa-shopping-bag text-xl"></i>
+                <span id="cartCount" class="absolute -top-1 -right-1 bg-seasonal-gold text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-luxury-sm">0</span>
+            </button>
+        </div>
+
+    </div>
+</nav>
+<!-- Hero Section -->
+<!-- ==================== PREMIUM HERO SECTION ==================== -->
+<section id="hero" class="relative w-full min-h-screen lg:min-h-[120dvh] flex items-center justify-center overflow-hidden pt-28 pb-20 lg:py-0">
+    <!-- Ambient Layers -->
+    <div id="starsLayer" class="ambient-layer"></div>
+    <div id="sparkleLayer" class="ambient-layer"></div>
+    <div id="mouseGlow" class="mouse-glow"></div>
+    <canvas id="rippleCanvas" class="absolute inset-0 pointer-events-none z-10">
+        <img src="assets/images/react.gif"
+             alt="مجموعة المولد الفاخرة"
+             class="w-full h-full object-cover"
+             loading="eager"
+             fetchpriority="high">
+    </canvas>
+
+    <!-- Background Gradient Overlay -->
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-primary/10 via-primary/5 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-cream via-cream/50 to-transparent"></div>
+    </div>
+
+    <!-- Decorative Elements -->
+
+    <!-- Main Content Container -->
+    <div class="relative z-20 w-full max-w-[1600px] px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center min-h-[80dvh]">
+
+        <!-- LEFT AREA: Text Content (lg:col-span-5) -->
+        <div class="lg:col-span-5 space-y-8 lg:space-y-10 text-center lg:text-left order-2 lg:order-1">
+
+            <!-- Seasonal Badge -->
+            <div class="hero-reveal opacity-0 translate-y-8 inline-block">
+                <span id="heroEyebrow" class="text-seasonal-gold text-sm md:text-base font-bold tracking-[0.35em] uppercase bg-rose/5 px-4 py-2 rounded-full border border-rose/10">
+                    حلاوة المولد
+                </span>
+            </div>
+
+            <!-- Main Headline -->
+            <div class="hero-reveal opacity-0 translate-y-8">
+                <h1 id="heroTitle" class="font-dmserif text-5xl md:text-6xl lg:text-7xl text-primary mb-4 leading-tight">
+                    المولد يعني ديسباسيتو
+                </h1>
+            </div>
+
+            <!-- Description -->
+            <div class="hero-reveal opacity-0 translate-y-8">
+                <p id="storyText" class="text-primary/70 text-lg md:text-xl font-light leading-relaxed max-w-lg mx-auto lg:mx-0">
+                    نحتفل بذكرى المولد النبوي الشريف عبر تقديم تشكيلة ملكية حصرية تجمع عراقة التقاليد المصرية وسحر الابتكار الفرنسي.
+                </p>
+            </div>
+
+            <!-- CTAs -->
+            <div class="hero-reveal opacity-0 translate-y-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <button onclick="document.getElementById('products-section').scrollIntoView({behavior: 'smooth'})"
+                        class="shine-btn group relative px-8 py-4 bg-primary rounded-2xl overflow-hidden shadow-luxury-md hover:shadow-luxury-lg transition-all duration-500 magnetic-element">
+                    <div class="absolute inset-0 w-0 bg-gold transition-all duration-500 ease-out-expo group-hover:w-full z-0"></div>
+                    <span class="relative z-10 text-white group-hover:text-primary font-bold tracking-wider text-sm md:text-base uppercase transition-colors duration-500">
+                        اطلب الآن
+                    </span>
+                </button>
+
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="hero-reveal opacity-0 translate-y-8 flex flex-wrap justify-center lg:justify-start gap-6 pt-4 border-t border-primary/5">
+                <div class="flex items-center gap-2 text-primary/50 text-sm">
+                    <i class="fas fa-star text-gold"></i>
+                    <span>جودة فاخرة</span>
+                </div>
+                <div class="flex items-center gap-2 text-primary/50 text-sm">
+                    <i class="fas fa-shipping-fast text-gold"></i>
+                    <span>توصيل سريع</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT AREA: Image Panels (lg:col-span-7) -->
+        <div class="lg:col-span-7 relative h-[400px] md:h-[500px] lg:h-[700px] order-1 lg:order-2">
+
+            <!-- Background Image Panel (Large) -->
+
+            <!-- Floating Product Card (Medium) -->
+            <div class="absolute top-1/4 left-0 w-2/4 md:w-1/3 rounded-3xl overflow-hidden shadow-luxury-lg border border-white/10 bg-white/50 backdrop-blur-sm float-slow">
+                <img src="assets/images/react.gif"
+                     alt="مجموعة المولد الفاخرة"
+                     class="w-full h-full object-cover"
+                     loading="eager"
+                     fetchpriority="high">
+            </div>
+
+            <!-- Small Decorative Card (Bottom Right) -->
+            <div class="absolute bottom-0 right-0 w-1/2 md:w-1/3 rounded-3xl overflow-hidden shadow-luxury-md border border-white/10 bg-white/30 backdrop-blur-sm float-slower" style="animation-delay: -2s;">
+                <div class="w-full h-full bg-gradient-to-br from-gold/10 to-rose/10"></div>
+            </div>
+
+            <!-- Decorative Ornament Circle -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[400px] md:h-[400px] pointer-events-none">
+                <svg viewBox="0 0 400 400" class="absolute inset-0 w-full h-full" aria-hidden="true">
+                    <circle class="ornament-stroke" cx="200" cy="200" r="180"/>
+                    <circle class="ornament-dotted" cx="200" cy="200" r="200"/>
+                </svg>
+            </div>
+
+            <!-- Floating Decorative Elements -->
+            <div class="absolute top-10 right-10 w-16 h-16 rounded-2xl bg-gold/10 backdrop-blur-sm shadow-luxury-sm float-slow" style="animation-delay: -1s;"></div>
+            <div class="absolute bottom-20 left-10 w-12 h-12 rounded-full bg-rose/10 backdrop-blur-sm shadow-luxury-sm float-slower" style="animation-delay: -3s;"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 text-primary/40 flex flex-col items-center gap-2 text-xs uppercase tracking-widest pointer-events-none">
+        <span class="hero-reveal opacity-0">انزل لأسفل</span>
+        <div class="w-[1px] h-12 bg-gradient-to-b from-seasonal-gold to-transparent relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1/2 bg-gold animate-bounce"></div>
+        </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <svg class="wave-divider absolute -bottom-px left-0 w-full h-auto text-cream pointer-events-none" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="wave-divider-path" fill="currentColor" d="M0,64 C 220,110 420,10 720,48 C 1020,86 1220,20 1440,56 L1440,120 L0,120 Z"></path>
+    </svg>
+</section>
+
+<!-- Products Section -->
+<section id="products-section" class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-dmserif text-primary mb-4">القائمة </h2>
+            <p class="text-graystone">اختر من تشكيلتنا المميزة</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+            <button onclick="filterCategory('all', this)" class="category-btn active px-6 py-2.5 rounded-full text-xs font-bold tracking-wider border border-primary/60 transition-all">الكل</button>
+            <button onclick="filterCategory('بالقطعة', this)" class="category-btn px-6 py-2.5 rounded-full text-xs font-bold tracking-wider border border-primary/60 transition-all">بالقطعة</button>
+            <button onclick="filterCategory('بالكيلو', this)" class="category-btn px-6 py-2.5 rounded-full text-xs font-bold tracking-wider border border-primary/60 transition-all">بالكيلو</button>
+            <button onclick="filterCategory('بالعلبة', this)" class="category-btn px-6 py-2.5 rounded-full text-xs font-bold tracking-wider border border-primary/60 transition-all">بالعلبة</button>
+        </div>
+
+        <div id="mawlidProductsContainer"
+             class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+        </div>        <div id="paginationContainer" class="flex justify-center items-center gap-2 mt-12"></div>
+    </div>
+</section>
+
+<!-- Branches Section -->
+<section id="branches-section" class="py-20 px-4 bg-rose-soft/20">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-dmserif text-center text-primary mb-12">فروعنا</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Branch 1 -->
+            <div class="glass-card p-8 rounded-3xl border border-primary/10 hover:shadow-luxury-lg transition-all duration-500 hover:-translate-y-2">
+                <h3 class="text-xl font-bold text-primary mb-3">بني سويف - مول توليب</h3>
+                <p class="text-graystone text-sm leading-relaxed mb-4">كورنيش النيل<br>مول توليب<br>الروف (الدور الأخير)</p>
+                <div class="flex flex-col gap-2 mt-4">
+                    <a href="https://maps.app.goo.gl/mg9PkKfVy4wDe1zx6" target="_blank" class="inline-flex items-center gap-2 text-seasonal-gold font-bold text-sm hover:gap-3 transition-all">
+                        <span>📍 عرض على الخريطة</span>
+                    </a>
+                    <a href="tel:01222190350" class="inline-flex items-center gap-2 text-primary/80 hover:text-seasonal-gold font-bold text-sm transition-all">
+                        <i class="fas fa-phone-alt text-xs text-seasonal-gold"></i>
+                        <span>01222190350</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Branch 2 -->
+            <div class="glass-card p-8 rounded-3xl border border-primary/10 hover:shadow-luxury-lg transition-all duration-500 hover:-translate-y-2">
+                <h3 class="text-xl font-bold text-primary mb-3">بني سويف - الرقابة الإدارية</h3>
+                <p class="text-graystone text-sm leading-relaxed mb-4">كورنيش النيل<br>بجوار الرقابة الإدارية</p>
+                <div class="flex flex-col gap-2 mt-4">
+                    <a href="https://maps.app.goo.gl/mg9PkKfVy4wDe1zx6" target="_blank" class="inline-flex items-center gap-2 text-seasonal-gold font-bold text-sm hover:gap-3 transition-all">
+                        <span>📍 عرض على الخريطة</span>
+                    </a>
+                    <a href="tel:01222190350" class="inline-flex items-center gap-2 text-primary/80 hover:text-seasonal-gold font-bold text-sm transition-all">
+                        <i class="fas fa-phone-alt text-xs text-seasonal-gold"></i>
+                        <span>01222190350</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Branch 3 -->
+            <div class="glass-card p-8 rounded-3xl border border-primary/10 hover:shadow-luxury-lg transition-all duration-500 hover:-translate-y-2">
+                <h3 class="text-xl font-bold text-primary mb-3">المنيا - شارع الجمهورية</h3>
+                <p class="text-graystone text-sm leading-relaxed mb-4">38 شارع الجمهورية<br>خلف البنك الأهلي<br>متفرع من كورنيش النيل</p>
+                <div class="flex flex-col gap-2 mt-4">
+                    <a href="https://maps.app.goo.gl/NNrTUhsnJDrLdLjS8" target="_blank" class="inline-flex items-center gap-2 text-seasonal-gold font-bold text-sm hover:gap-3 transition-all">
+                        <span>📍 عرض على الخريطة</span>
+                    </a>
+                    <a href="tel:01098255579" class="inline-flex items-center gap-2 text-primary/80 hover:text-seasonal-gold font-bold text-sm transition-all">
+                        <i class="fas fa-phone-alt text-xs text-seasonal-gold"></i>
+                        <span>01098255579</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Branch 4 -->
+            <div class="glass-card p-8 rounded-3xl border border-primary/10 hover:shadow-luxury-lg transition-all duration-500 hover:-translate-y-2">
+                <h3 class="text-xl font-bold text-primary mb-3">المنيا الجديدة - مول أب تاون</h3>
+                <p class="text-graystone text-sm leading-relaxed mb-4">مول أب تاون<br>بجوار طاولة</p>
+                <div class="flex flex-col gap-2 mt-4">
+                    <a href="https://maps.app.goo.gl/kJJPUGzM4tnRLApq5" target="_blank" class="inline-flex items-center gap-2 text-seasonal-gold font-bold text-sm hover:gap-3 transition-all">
+                        <span>📍 عرض على الخريطة</span>
+                    </a>
+                    <a href="tel:01005551898" class="inline-flex items-center gap-2 text-primary/80 hover:text-seasonal-gold font-bold text-sm transition-all">
+                        <i class="fas fa-phone-alt text-xs text-seasonal-gold"></i>
+                        <span>01005551898</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Branch 5 -->
+            <div class="glass-card p-8 rounded-3xl border border-primary/10 hover:shadow-luxury-lg transition-all duration-500 hover:-translate-y-2">
+                <h3 class="text-xl font-bold text-primary mb-3">الفيوم - دلة</h3>
+                <p class="text-graystone text-sm leading-relaxed mb-4">دلة<br>بجوار بنزين الغاز<br>بجوار ستوديو مودرن</p>
+                <div class="flex flex-col gap-2 mt-4">
+                    <a href="https://maps.app.goo.gl/BKc6UXr5UWRrkSCG8" target="_blank" class="inline-flex items-center gap-2 text-seasonal-gold font-bold text-sm hover:gap-3 transition-all">
+                        <span>📍 عرض على الخريطة</span>
+                    </a>
+                    <a href="tel:01020040656" class="inline-flex items-center gap-2 text-primary/80 hover:text-seasonal-gold font-bold text-sm transition-all">
+                        <i class="fas fa-phone-alt text-xs text-seasonal-gold"></i>
+                        <span>01020040656</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Branch 6 -->
+            <div class="glass-card p-8 rounded-3xl border border-primary/10 hover:shadow-luxury-lg transition-all duration-500 hover:-translate-y-2">
+                <h3 class="text-xl font-bold text-primary mb-3">بني سويف - شرق النيل</h3>
+                <p class="text-graystone text-sm leading-relaxed mb-4">شرق النيل<br>أمام كلية التعليم الصناعي</p>
+                <div class="flex flex-col gap-2 mt-4">
+                    <a href="tel:01000206914" class="inline-flex items-center gap-2 text-primary/80 hover:text-seasonal-gold font-bold text-sm transition-all">
+                        <i class="fas fa-phone-alt text-xs text-seasonal-gold"></i>
+                        <span>01000206914</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cart Drawer -->
+<div id="cartModal" class="fixed inset-0 z-50 hidden items-center justify-end bg-black/20 backdrop-blur-sm">
+    <div class="cart-drawer w-full max-w-md h-full bg-white/95 backdrop-blur-xl shadow-2xl transform translate-x-full transition-transform duration-500 ease-out flex flex-col">
+        <div class="p-6 border-b border-primary/10 flex items-center justify-between">
+            <h3 class="text-2xl font-dmserif text-primary">سلة الطلبات</h3>
+            <button onclick="closeCart()" class="text-graystone hover:text-primary transition-colors">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+
+        <div id="cartItems" class="flex-1 overflow-y-auto custom-scrollbar p-6 space-y-4"></div>
+
+        <div id="emptyCart" class="flex-1 flex flex-col items-center justify-center p-6 text-center hidden">
+            <i class="fas fa-shopping-bag text-5xl text-primary/20 mb-4"></i>
+            <p class="text-graystone font-medium">السلة فارغة حالياً</p>
+            <p class="text-graystone/60 text-sm mt-2">قم بإضافة مجموعة مختارة من الحلويات الملكية</p>
+        </div>
+
+        <div id="cartCheckout" class="p-6 border-t border-primary/10 bg-rose-soft/30 space-y-4" style="display: none;">
+            <div class="flex justify-between text-primary font-bold">
+                <span>الإجمالي الصافي</span>
+                <span id="cartTotal">0 ج.م</span>
+            </div>
+
+            <div>
+                <label class="block text-xs font-bold text-graystone mb-2">اختر الفرع</label>
+                <select id="branchSelect" class="w-full p-3 rounded-2xl border border-primary/20 bg-white/80 text-sm text-primary focus:outline-none focus:border-seasonal-gold transition-colors">
+                    <option value="benisuef_corniche">بني سويف - كورنيش النيل</option>
+                    <option value="benisuef_east">بني سويف - شرق النيل</option>
+                    <option value="minya_corniche">المنيا - الكورنيش</option>
+                    <option value="minya_new">المنيا الجديدة</option>
+                    <option value="fayoum">الفيوم</option>
+                </select>
+            </div>
+
+            <div class="flex gap-2">
+                <label class="flex-1 cursor-pointer">
+                    <input type="radio" name="orderType" value="pickup" class="peer hidden" checked onchange="toggleDeliveryFields()">
+                    <div class="p-3 rounded-2xl border border-primary/20 text-center text-xs font-bold text-graystone peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-all">استلام من الفرع</div>
+                </label>
+                <label class="flex-1 cursor-pointer">
+                    <input type="radio" name="orderType" value="delivery" class="peer hidden" onchange="toggleDeliveryFields()">
+                    <div class="p-3 rounded-2xl border border-primary/20 text-center text-xs font-bold text-graystone peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-all">توصيل</div>
+                </label>
+            </div>
+
+            <div id="deliveryFields" class="space-y-3 overflow-hidden transition-all duration-300">
+                <select id="governorateSelect" class="w-full p-3 rounded-2xl border border-primary/20 bg-white/80 text-sm text-primary focus:outline-none focus:border-seasonal-gold">
+                    <option value="">-- اختر المحافظة --</option>
+                    <option value="الفيوم">الفيوم</option>
+                    <option value="بني سويف">بني سويف</option>
+                    <option value="المنيا">المنيا</option>
+                </select>
+                <textarea id="deliveryAddress" placeholder="العنوان بالتفصيل" class="w-full p-3 rounded-2xl border border-primary/20 bg-white/80 text-sm text-primary placeholder:text-primary/40 focus:outline-none focus:border-seasonal-gold resize-none h-20"></textarea>
+            </div>
+
+            <textarea id="customerNotes" placeholder="ملاحظات خاصة للطلب (اختياري)" class="w-full p-3 rounded-2xl border border-primary/20 bg-white/80 text-sm text-primary placeholder:text-primary/40 focus:outline-none focus:border-seasonal-gold resize-none h-16"></textarea>
+
+            <p id="cartError" class="text-red-500 text-xs font-medium hidden"></p>
+
+            <button onclick="sendOrder()" class="shine-btn w-full py-4 bg-primary text-white font-bold rounded-2xl shadow-luxury-md hover:shadow-luxury-lg transition-all">
+                إرسال وتأكيد الطلب الفاخر
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="phoneModal" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/40 backdrop-blur-sm p-4">
+    <div class="modal-pop bg-white rounded-[2.5rem] p-8 max-w-md w-full shadow-2xl border border-primary/10">
+        <h3 class="text-2xl font-dmserif text-primary mb-6 text-center">بيانات تسليم الطلب</h3>
+        <div class="space-y-4">
+            <input type="text" id="customerNameInput" placeholder="اسم العميل الكريم *" class="w-full p-4 rounded-2xl border border-primary/20 bg-rose-soft/20 text-sm focus:outline-none focus:border-seasonal-gold">
+            <input type="tel" id="customerPhoneInput" placeholder="رقم الجوال الفعال *" class="w-full p-4 rounded-2xl border border-primary/20 bg-rose-soft/20 text-sm focus:outline-none focus:border-seasonal-gold">
+            <p id="phoneErrorMsg" class="text-red-500 text-xs font-medium hidden"></p>
+        </div>
+        <div class="flex gap-3 mt-8">
+            <button onclick="closePhoneModal(true)" class="flex-1 py-3 rounded-2xl border border-primary/20 text-graystone font-bold hover:bg-rose-soft/50 transition-colors">إلغاء</button>
+            <button onclick="confirmPhoneAndSend()" class="shine-btn flex-1 py-3 rounded-2xl bg-primary text-white font-bold shadow-luxury-md">تأكيد وإرسال</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="contact" class="bg-rose-soft/40 py-16 px-4 border-t border-primary/10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-right">
+        <div>
+            <h3 class="text-2xl font-dmserif text-primary mb-4">Despacito</h3>
+            <p class="text-graystone text-sm leading-relaxed">نكرس شغفنا لابتكار أرقى مستويات الفخامة في عالم الحلويات المصرية والشرقية.</p>
+        </div>
+        <div>
+            <h4 class="text-lg font-bold text-primary mb-4">روابط سريعة</h4>
+            <ul class="space-y-2 text-graystone text-sm">
+                <li><a href="#hero" class="hover:text-seasonal-gold transition-colors">الرئيسية</a></li>
+                <li><a href="#products-section" class="hover:text-seasonal-gold transition-colors">حلاوة المولد</a></li>
+                <li><a href="#branches-section" class="hover:text-seasonal-gold transition-colors">فروعنا</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-lg font-bold text-primary mb-4">تابعنا</h4>
+            <div class="flex gap-4 justify-center md:justify-start">
+                <a href="https://www.facebook.com/DespacitoPatisserie" target="_blank" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-graystone hover:text-seasonal-gold hover:shadow-luxury-sm transition-all"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/despacito_patisserie" target="_blank" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-graystone hover:text-seasonal-gold hover:shadow-luxury-sm transition-all"><i class="fab fa-instagram"></i></a>
+                <a href="https://vt.tiktok.com/ZSCK6k1Dw/" target="_blank" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-graystone hover:text-seasonal-gold hover:shadow-luxury-sm transition-all"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-primary/10 text-center text-graystone text-xs">
+        © 2026 <a href="https://www.facebook.com/YASmarketingagency" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors">
+        By Yas Marketing Agency
+    </a>. جميع الحقوق محفوظة لـ Despacito Patisserie.
+    </div>
+    <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-white/30 text-[11px] tracking-widest font-light uppercase">
+        <p>© 2026 Despacito Patisserie. جميع الحقوق محفوظة.</p>
+
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
