@@ -56,382 +56,471 @@
   "image": "assets/images/mawlid.jpg",
   "badge": ""
 },
+  
     {
-      "id": 8,
-      "category": "بالقطعة",
-      "name": "ساندويتش فخفخينا فول",
-      "price": 30,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
+  "id": 19,
+  "category": "بالكيلو",
+  "name": "دومية فول",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 20,
+  "category": "بالكيلو",
+  "name": "ملبن سادة",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 21,
+  "category": "بالكيلو",
+  "name": "ملبن جيلي صفر",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 22,
+  "category": "بالكيلو",
+  "name": "ملبن رش فول",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 23,
+  "category": "بالكيلو",
+  "name": "ملبن رش زبيب",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": "الأكثر مبيعاً"
+},
+{
+  "id": 24,
+  "category": "بالكيلو",
+  "name": "نجا سادة",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 25,
+  "category": "بالكيلو",
+  "name": "مدور فول 8 سم",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 26,
+  "category": "بالكيلو",
+  "name": "مدور حمص 8 سم",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 27,
+  "category": "بالكيلو",
+  "name": "مدور سمسم 8 سم",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 28,
+  "category": "بالكيلو",
+  "name": "راحة فول",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 29,
+  "category": "بالكيلو",
+  "name": "راحة سمسم",
+  "price": 175,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
     },
     {
-      "id": 9,
-      "category": "بالقطعة",
-      "name": "دومية بندق",
-      "price": 25,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
+  "id": 30,
+  "category": "بالكيلو",
+  "name": "سمسمية ديسباسيتو",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 31,
+  "category": "بالكيلو",
+  "name": "حمصية ديسباسيتو",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 32,
+  "category": "بالكيلو",
+  "name": "فولية ديسباسيتو",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 33,
+  "category": "بالكيلو",
+  "name": "بورما جوز هند فول",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 34,
+  "category": "بالكيلو",
+  "name": "ساندويتش ديسباسيتو زبيب",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 35,
+  "category": "بالكيلو",
+  "name": "ساندويتش فول ديسباسيتو",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 36,
+  "category": "بالكيلو",
+  "name": "قشطة سادة",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 37,
+  "category": "بالكيلو",
+  "name": "مربى جوز هند زبيب",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 38,
+  "category": "بالكيلو",
+  "name": "قشطة زبيب",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 39,
+  "category": "بالكيلو",
+  "name": "قشطة فول",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 40,
+  "category": "بالكيلو",
+  "name": "بورما جوز هند زبيب",
+  "price": 300,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
     {
-      "id": 10,
-      "category": "بالقطعة",
-      "name": "شكلة جوز هند كريمة",
-      "price": 35,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
+  "id": 41,
+  "category": "بالكيلو",
+  "name": "ملبن رش لوز",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 42,
+  "category": "بالكيلو",
+  "name": "ملبن رش كاجو",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 43,
+  "category": "بالكيلو",
+  "name": "بورما فخفخينا فول",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 44,
+  "category": "بالكيلو",
+  "name": "بورما فخفخينا زبيب",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 45,
+  "category": "بالكيلو",
+  "name": "ساندويتش فخفخينا زبيب",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 46,
+  "category": "بالكيلو",
+  "name": "ساندويتش فخفخينا فول",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 47,
+  "category": "بالكيلو",
+  "name": "مربى جوز هند لوز",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 48,
+  "category": "بالكيلو",
+  "name": "ملبن رش بندق",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 49,
+  "category": "بالكيلو",
+  "name": "دومية بندق",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 50,
+  "category": "بالكيلو",
+  "name": "نجا لوز قمر الدين",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 51,
+  "category": "بالكيلو",
+  "name": "ملبن رش فستق",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 52,
+  "category": "بالكيلو",
+  "name": "مربى جوز هند بندق",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 53,
+  "category": "بالكيلو",
+  "name": "فخفخينا مكسرات",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 54,
+  "category": "بالكيلو",
+  "name": "قشطة لوز",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 55,
+  "category": "بالكيلو",
+  "name": "لديدة 50 جرام",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 56,
+  "category": "بالكيلو",
+  "name": "حمام 50 جرام",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 57,
+  "category": "بالكيلو",
+  "name": "قشطة بندق",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 58,
+  "category": "بالكيلو",
+  "name": "قشطة فستق",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 59,
+  "category": "بالكيلو",
+  "name": "فولية كريمة",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 60,
+  "category": "بالكيلو",
+  "name": "سمسمية كريمة",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
     {
-      "id": 11,
-      "category": "بالقطعة",
-      "name": "شكلة جوز هند شيكولاتة",
-      "price": 40,
-      "image": "assets/images/mawlid.jpg",
-      "badge": "جديد"
-    },
-    {
-      "id": 12,
-      "category": "بالقطعة",
-      "name": "دومية",
-      "price": 20,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 13,
-      "category": "بالقطعة",
-      "name": "حمام",
-      "price": 15,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 14,
-      "category": "بالقطعة",
-      "name": "راحة سمسم",
-      "price": 25,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 15,
-      "category": "بالقطعة",
-      "name": "راحة فول",
-      "price": 28,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 16,
-      "category": "بالقطعة",
-      "name": "لوز",
-      "price": 40,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 17,
-      "category": "بالقطعة",
-      "name": "بندق",
-      "price": 45,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 18,
-      "category": "بالقطعة",
-      "name": "حمام كريمة",
-      "price": 22,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 19,
-      "category": "بالكيلو",
-      "name": "بورما جوز هند زبيب",
-      "price": 320,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 20,
-      "category": "بالكيلو",
-      "name": "بورما جوز هند فول",
-      "price": 350,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 21,
-      "category": "بالكيلو",
-      "name": "بورما فخفخينا فول",
-      "price": 300,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 22,
-      "category": "بالكيلو",
-      "name": "بورما فخفخينا زبيب",
-      "price": 330,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 23,
-      "category": "بالكيلو",
-      "name": "قشطة سادة",
-      "price": 400,
-      "image": "assets/images/mawlid.jpg",
-      "badge": "الأكثر مبيعاً"
-    },
-    {
-      "id": 24,
-      "category": "بالكيلو",
-      "name": "قشطة فول",
-      "price": 420,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 25,
-      "category": "بالكيلو",
-      "name": "قشطة زبيب",
-      "price": 450,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 26,
-      "category": "بالكيلو",
-      "name": "قشطة فواكه",
-      "price": 480,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 27,
-      "category": "بالكيلو",
-      "name": "مربى جوز هند زبيب",
-      "price": 380,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 28,
-      "category": "بالكيلو",
-      "name": "مربى جوز هند بندق",
-      "price": 420,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 29,
-      "category": "بالكيلو",
-      "name": "مربى جوز هند لوز",
-      "price": 450,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 30,
-      "category": "بالكيلو",
-      "name": "هريسة ديسباسيتو سادة",
-      "price": 350,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 31,
-      "category": "بالكيلو",
-      "name": "هريسة ديسباسيتو بندق",
-      "price": 400,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 32,
-      "category": "بالكيلو",
-      "name": "هريسة ديسباسيتو لوز",
-      "price": 420,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 33,
-      "category": "بالكيلو",
-      "name": "ملبن رش لوز",
-      "price": 480,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 34,
-      "category": "بالكيلو",
-      "name": "ملبن رش فستق",
-      "price": 500,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 35,
-      "category": "بالكيلو",
-      "name": "ملبن رش بندق",
-      "price": 520,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 36,
-      "category": "بالكيلو",
-      "name": "قشطة رافيللو",
-      "price": 550,
-      "image": "assets/images/mawlid.jpg",
-      "badge": "فاخر"
-    },
-    {
-      "id": 37,
-      "category": "بالكيلو",
-      "name": "نوجا قمر الدين بندق",
-      "price": 400,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 38,
-      "category": "بالكيلو",
-      "name": "نوجا قمر الدين لوز",
-      "price": 420,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 39,
-      "category": "بالكيلو",
-      "name": "قشطة فستق",
-      "price": 480,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 40,
-      "category": "بالكيلو",
-      "name": "ملبن لوتس",
-      "price": 500,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 41,
-      "category": "بالكيلو",
-      "name": "قشطة رش زبيب",
-      "price": 450,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 42,
-      "category": "بالكيلو",
-      "name": "ملبن رش فول",
-      "price": 420,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 43,
-      "category": "بالكيلو",
-      "name": "نوجا سادة",
-      "price": 380,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 44,
-      "category": "بالكيلو",
-      "name": "ملبن حبل عين جمل",
-      "price": 480,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 45,
-      "category": "بالكيلو",
-      "name": "قشطة كنافة تريند",
-      "price": 500,
-      "image": "assets/images/mawlid.jpg",
-      "badge": "جديد"
-    },
-    {
-      "id": 46,
-      "category": "بالكيلو",
-      "name": "نوجا رش لوز ديسباسيتو",
-      "price": 450,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 47,
-      "category": "بالكيلو",
-      "name": "فخفخينا مكسرات",
-      "price": 500,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 48,
-      "category": "بالكيلو",
-      "name": "مكسرات مخلطة",
-      "price": 480,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 49,
-      "category": "بالكيلو",
-      "name": "شوكولاتة بالحليب",
-      "price": 550,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 50,
-      "category": "بالكيلو",
-      "name": "شوكولاتة باللوز",
-      "price": 600,
-      "image": "assets/images/mawlid.jpg",
-      "badge": "فاخر"
-    },
-    {
-      "id": 51,
-      "category": "بالكيلو",
-      "name": "قشطة كريمة",
-      "price": 450,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 52,
-      "category": "بالكيلو",
-      "name": "فخفخينا سادة",
-      "price": 420,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 53,
-      "category": "بالكيلو",
-      "name": "نوجا كريمة",
-      "price": 400,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 54,
-      "category": "بالكيلو",
-      "name": "شوكولاتة",
-      "price": 500,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
+  "id": 61,
+  "category": "بالكيلو",
+  "name": "قشطة شيكولاتة",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 62,
+  "category": "بالكيلو",
+  "name": "قشطة لوتس",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 63,
+  "category": "بالكيلو",
+  "name": "قشطة رافايلو",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 64,
+  "category": "بالكيلو",
+  "name": "بسيمة ديسباسيتو",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 65,
+  "category": "بالكيلو",
+  "name": "نوجا قمر الدين بندق",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 66,
+  "category": "بالكيلو",
+  "name": "بسيمة لوز",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 67,
+  "category": "بالكيلو",
+  "name": "بسيمة بندق",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 68,
+  "category": "بالكيلو",
+  "name": "شكلمة كريمة",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 69,
+  "category": "بالكيلو",
+  "name": "شكلمة ديسباسيتو",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 70,
+  "category": "بالكيلو",
+  "name": "شكلمة شيكولاتة",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 71,
+  "category": "بالكيلو",
+  "name": "نوجا من وسلوى",
+  "price": 400,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 72,
+  "category": "بالكيلو",
+  "name": "ملبن حبل مخصوص",
+  "price": 460,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 73,
+  "category": "بالكيلو",
+  "name": "نوجا قمر الدين فستق",
+  "price": 460,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 74,
+  "category": "بالكيلو",
+  "name": "نوجا رش بندق",
+  "price": 460,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 75,
+  "category": "بالكيلو",
+  "name": "نوجا رش لوز",
+  "price": 460,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
+{
+  "id": 76,
+  "category": "بالكيلو",
+  "name": "قشطة مغطس كنافة فستق",
+  "price": 460,
+  "image": "assets/images/mawlid.jpg",
+  "badge": ""
+},
     {
       "id": 55,
       "category": "بالعلبة",
