@@ -7,6 +7,170 @@ let activeSeason = 'mawlid';
 const getProductsPerPage = () => window.innerWidth < 768 ? 8 : 12;
 const RESILIENT_FALLBACK_IMG = "assets/images/empty_img.png";
 
+// ==================== GLOBAL OFFER SYSTEM & UTILITIES ====================
+window.globalStoreOffer = null;
+let offerCountdownInterval = null;
+
+/**
+ * Reusable Offer Utility: Validates any offer object against active flag and date range.
+ * All products and UI banners use this single validation logic.
+ */
+function validateOffer(offerInput) {
+    const offer = offerInput || window.globalStoreOffer;
+    if (!offer || typeof offer !== 'object') return null;
+    if (offer.active !== true) return null;
+    if (!offer.startDate || !offer.endDate) return null;
+
+    const now = new Date();
+    const start = new Date(offer.startDate);
+    const end = new Date(offer.endDate);
+
+    if (isNaN(start.getTime()) || isNaN(end.getTime())) return null;
+    // Valid only when current time is within [startDate, endDate]
+    if (now < start || now > end) return null;
+
+    return offer;
+}
+
+/**
+ * Returns the formatted discount value (e.g., "10%" or "50 ج.م").
+ * If both 'percentage' and 'amount' exist in JSON, checks which one is > 0 and automatically switches when either is set to 0!
+ */
+function getOfferValueText(offer) {
+    if (!offer) return '';
+    const amt = parseFloat(offer.amount ?? offer.discountAmount ?? offer.fixed ?? 0);
+    const perc = parseFloat(offer.percentage ?? offer.percent ?? 0);
+
+    if (amt > 0) {
+        return `${parseInt(amt, 10).toLocaleString("ar-EG")} ج.م`;
+    }
+    if (perc > 0) {
+        return `${perc}%`;
+    }
+    return '0%';
+}
+
+/**
+ * Returns the full badge label (e.g., "خصم 10%" or "خصم 50 ج.م").
+ */
+function getOfferBadgeText(offer) {
+    if (!offer) return '';
+    return `خصم ${getOfferValueText(offer)}`;
+}
+
+/**
+ * Calculates the discounted price dynamically without mutating original JSON price.
+ * Automatically selects 'amount' or 'percentage' depending on which is non-zero (> 0).
+ */
+function getDiscountedPrice(price, offerInput) {
+    const validOffer = validateOffer(offerInput);
+    if (!validOffer || isNaN(price)) return parseInt(price, 10);
+    const originalPrice = parseFloat(price);
+    const amt = parseFloat(validOffer.amount ?? validOffer.discountAmount ?? validOffer.fixed ?? 0);
+    const perc = parseFloat(validOffer.percentage ?? validOffer.percent ?? 0);
+
+    let discount = 0;
+    if (amt > 0) {
+        discount = amt;
+    } else if (perc > 0) {
+        discount = (originalPrice * perc) / 100;
+    }
+    return Math.round(Math.max(0, originalPrice - discount));
+}
+
+function initGlobalOfferSystem(offerData) {
+    window.globalStoreOffer = offerData;
+    const banner = document.getElementById('offerBanner');
+    const titleEl = document.getElementById('offerTitle');
+    const daysEl = document.getElementById('timerDays');
+    const hoursEl = document.getElementById('timerHours');
+    const minsEl = document.getElementById('timerMinutes');
+    const secsEl = document.getElementById('timerSeconds');
+    const heroSection = document.getElementById('hero');
+
+    if (offerCountdownInterval) clearInterval(offerCountdownInterval);
+    if (!offerData || !offerData.active || !offerData.startDate || !offerData.endDate) {
+        if (banner) banner.classList.add('hidden');
+        if (heroSection) heroSection.classList.remove('pt-40', 'md:pt-44');
+        return;
+    }
+
+    const start = new Date(offerData.startDate);
+    const end = new Date(offerData.endDate);
+
+    if (titleEl && offerData.title) {
+        let titleText = offerData.title;
+        const valText = getOfferValueText(offerData);
+        if (valText && !titleText.includes(valText)) {
+            if (titleText.trim().endsWith("خصم")) {
+                titleText = `${titleText.trim()} ${valText}`;
+            } else {
+                titleText = `${titleText} (${getOfferBadgeText(offerData)})`;
+            }
+        }
+        titleEl.textContent = titleText;
+    }
+
+    let wasActive = false;
+
+    function updateTimer() {
+        const now = new Date();
+        if (now < start) {
+            // Before start date: hide banner, do not show discount badges
+            if (banner) banner.classList.add('hidden');
+            if (heroSection) heroSection.classList.remove('pt-40', 'md:pt-44');
+            wasActive = false;
+            return;
+        }
+        if (now > end) {
+            // Expired offer: hide global banner and all product badges automatically without refresh
+            clearInterval(offerCountdownInterval);
+            if (banner) banner.classList.add('hidden');
+            if (heroSection) heroSection.classList.remove('pt-40', 'md:pt-44');
+            if (wasActive) {
+                wasActive = false;
+                renderStorefrontGrid();
+                syncCartUIMatrix();
+            }
+            return;
+        }
+
+        // Offer is active
+        if (!wasActive) {
+            wasActive = true;
+            if (banner) banner.classList.remove('hidden');
+            if (heroSection) heroSection.classList.add('pt-40', 'md:pt-44');
+            renderStorefrontGrid();
+            syncCartUIMatrix();
+        }
+
+        // Countdown using endDate - currentDate
+        const diff = Math.max(0, end - now);
+        const totalSeconds = Math.floor(diff / 1000);
+        const days = Math.floor(totalSeconds / (3600 * 24));
+        const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
+        if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
+        if (minsEl) minsEl.textContent = String(minutes).padStart(2, '0');
+        if (secsEl) secsEl.textContent = String(seconds).padStart(2, '0');
+
+        if (totalSeconds === 0) {
+            clearInterval(offerCountdownInterval);
+            if (banner) banner.classList.add('hidden');
+            if (heroSection) heroSection.classList.remove('pt-40', 'md:pt-44');
+            wasActive = false;
+            renderStorefrontGrid();
+            syncCartUIMatrix();
+        }
+    }
+
+    updateTimer();
+    offerCountdownInterval = setInterval(updateTimer, 1000);
+}
+
 // ==================== SYSTEM INTERFACES AND LOADING ENGINE ====================
 window.addEventListener('DOMContentLoaded', () => {
     initPreloaderSequence();
@@ -236,7 +400,15 @@ async function fetchStorefrontPayload() {
         const response = await fetch('assets/data/data.json');
         if (!response.ok) throw new Error('Data payload link disrupted');
         const data = await response.json();
-        window.allProducts = data.products;
+        // Read global offer configuration dynamically from JSON / footer data source
+        window.globalStoreOffer = data.offer || data.footer?.offer || null;
+        // Ensure unique IDs across all products and attach dynamic offer reference without modifying original JSON structure
+        window.allProducts = (data.products || []).map((item, idx) => ({ 
+            ...item, 
+            id: idx + 1,
+            offer: item.offer || window.globalStoreOffer || null 
+        }));
+        initGlobalOfferSystem(window.globalStoreOffer);
     } catch (e) {
         console.error('❌ Failed to load products data:', e.message);
         window.allProducts = [];
@@ -262,9 +434,14 @@ function renderStorefrontGrid() {
         container.innerHTML = `<div class="col-span-full text-center py-20"><p class="text-primary/40 font-light">لا توجد نتائج مطابقة.</p></div>`;
         renderPaginationControls(filtered.length); return;
     }
-    container.innerHTML = paginatedItems.map((item, idx) => `
+    container.innerHTML = paginatedItems.map((item, idx) => {
+        const validOffer = validateOffer(item.offer);
+        const originalPrice = parseInt(item.price, 10);
+        const discountedPrice = validOffer ? getDiscountedPrice(originalPrice, validOffer) : originalPrice;
+        return `
         <article class="product-card seasonal-surface p-3 md:p-5 rounded-[1.5rem] md:rounded-[2.5rem] border border-primary/5 flex flex-col h-full opacity-0 translate-y-8" style="animation-delay: ${idx * 60}ms">
             <div class="product-image-container relative aspect-square md:aspect-[4/5] seasonal-bg mb-3 md:mb-6 rounded-[1.25rem] md:rounded-3xl overflow-hidden">
+                ${validOffer ? `<span class="product-offer-badge absolute top-2 left-2 md:top-4 md:left-4 z-20 bg-[#d90441] text-white font-bold text-[9px] md:text-[11px] tracking-wide px-2.5 py-1 md:px-3 md:py-1.5 rounded-full shadow-luxury-md flex items-center gap-1.5 border border-seasonal-gold/30"><i class="fas fa-tag text-[10px] text-seasonal-gold animate-pulse"></i> ${getOfferBadgeText(validOffer)}</span>` : ''}
                 ${item.badge ? `<span class="absolute top-2 right-2 md:top-4 md:right-4 z-20 seasonal-surface text-seasonal-gold text-[8px] md:text-[10px] font-bold tracking-widest uppercase px-2 py-1 md:px-3 md:py-1.5 rounded-full shadow-luxury-sm border border-seasonal-gold/20">${item.badge}</span>` : ''}
                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="${item.image}" alt="${item.name}" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 lazy-load opacity-0" onload="handleImageCompletion(this)" onerror="handleImageDisruption(this)">
                 <div class="absolute inset-0 skeleton-loader"></div>
@@ -277,11 +454,20 @@ function renderStorefrontGrid() {
                 ${item.pieces ? `<p class="text-graystone text-[10px] md:text-xs mb-1 md:mb-2 ${Array.isArray(item.contents) && item.contents.length ? 'cursor-pointer hover:text-primary transition-colors' : ''}" ${Array.isArray(item.contents) && item.contents.length ? `onclick="openProductDetailsModal('${item.id}')"` : ''}>${Number(item.pieces).toLocaleString("ar-EG")} قطعة</p>` : ''}
                 ${Array.isArray(item.contents) && item.contents.length ? `<button onclick="openProductDetailsModal('${item.id}')" class="text-seasonal-gold text-[10px] md:text-xs font-bold underline underline-offset-2 hover:text-primary transition-colors mb-1 md:mb-2">عرض المحتويات</button>` : ''}
                 <div class="mt-auto pt-2 md:pt-4 border-t border-primary/5">
-                    <span class="text-xs md:text-base font-bold text-primary">${parseInt(item.price, 10).toLocaleString("ar-EG")} ج.م</span>
+                    ${validOffer ? `
+                        <div class="flex flex-col items-center justify-center gap-0.5">
+                            <div class="flex items-center gap-2">
+                                <span class="text-[11px] md:text-xs text-gray-400 line-through font-normal">${originalPrice.toLocaleString("ar-EG")} ج.م</span>
+                                <span class="text-xs md:text-base font-bold text-primary">${discountedPrice.toLocaleString("ar-EG")} ج.م</span>
+                            </div>
+                            <span class="text-[10px] md:text-xs text-seasonal-gold font-bold">${getOfferBadgeText(validOffer)}</span>
+                        </div>
+                    ` : `<span class="text-xs md:text-base font-bold text-primary">${originalPrice.toLocaleString("ar-EG")} ج.م</span>`}
                 </div>
             </div>
         </article>
-    `).join("");
+        `;
+    }).join("");
     gsap.to('.product-card', { opacity: 1, y: 0, duration: 0.8, stagger: 0.08, ease: "power3.out" });
     lazyLoadFallbackObserver();
     renderPaginationControls(filtered.length);
@@ -438,7 +624,20 @@ window.openProductDetailsModal = (id) => {
     if (titleEl) titleEl.innerText = product.name;
     if (metaEl) metaEl.innerText = product.pieces ? `${Number(product.pieces).toLocaleString("ar-EG")} قطعة` : '';
     if (imgEl) { imgEl.src = product.image; imgEl.alt = product.name; }
-    if (priceEl) priceEl.innerText = `${parseInt(product.price, 10).toLocaleString("ar-EG")} ج.م`;
+    if (priceEl) {
+        const validOffer = validateOffer(product.offer);
+        const originalPrice = parseInt(product.price, 10);
+        if (validOffer) {
+            const discountedPrice = getDiscountedPrice(originalPrice, validOffer);
+            priceEl.innerHTML = `
+                <span style="font-size:0.9rem; color:#8B7B7E; text-decoration:line-through; margin-left:8px;">${originalPrice.toLocaleString("ar-EG")} ج.م</span>
+                <span style="color:#d90441; font-weight:bold; font-size:1.25rem;">${discountedPrice.toLocaleString("ar-EG")} ج.م</span>
+                <span style="font-size:0.75rem; background:#F5AEB833; color:#d90441; padding:3px 10px; border-radius:9999px; font-weight:bold; margin-right:10px; border:1px solid #d9044120;">${getOfferBadgeText(validOffer)}</span>
+            `;
+        } else {
+            priceEl.innerText = `${originalPrice.toLocaleString("ar-EG")} ج.م`;
+        }
+    }
     if (addBtn) addBtn.onclick = () => { addToCart(product.id); closeProductDetailsModal(); };
 
     if (listEl) {
@@ -527,7 +726,15 @@ function syncCartUIMatrix() {
                 </div>
                 <div class="flex-1">
                     <h4 class="font-bold text-primary text-sm">${item.name}</h4>
-                    <p class="text-seasonal-gold font-bold text-xs mt-1">${parseInt(item.price, 10).toLocaleString("ar-EG")} ج.م</p>
+                    ${(() => {
+                        const orig = parseInt(item.price, 10);
+                        const validOffer = validateOffer(item.offer);
+                        if (validOffer) {
+                            const disc = getDiscountedPrice(orig, validOffer);
+                            return `<p class="text-xs mt-1 flex flex-wrap items-center gap-2"><span class="line-through text-gray-400 text-[11px] font-normal">${orig.toLocaleString("ar-EG")} ج.م</span> <span class="text-seasonal-gold font-bold">${disc.toLocaleString("ar-EG")} ج.م</span> <span class="text-[10px] bg-primary/10 text-primary px-1.5 py-0.5 rounded-full font-bold">${getOfferBadgeText(validOffer)}</span></p>`;
+                        }
+                        return `<p class="text-seasonal-gold font-bold text-xs mt-1">${orig.toLocaleString("ar-EG")} ج.م</p>`;
+                    })()}
                     <div class="flex items-center gap-3 mt-3">
                         <button onclick="updateCartQuantity(${idx}, -1)" class="w-7 h-7 rounded-full bg-white text-primary border border-primary/10 hover:bg-primary hover:text-white transition-colors flex items-center justify-center font-bold text-xs">-</button>
                         <span class="font-bold text-xs w-4 text-center">${item.quantity}</span>
@@ -538,7 +745,10 @@ function syncCartUIMatrix() {
             </div>
         `).join('');
     }
-    const aggregatedSum = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    const aggregatedSum = cart.reduce((sum, item) => {
+        const itemPrice = validateOffer(item.offer) ? getDiscountedPrice(item.price, item.offer) : item.price;
+        return sum + (itemPrice * item.quantity);
+    }, 0);
     if (totalEl) totalEl.innerText = aggregatedSum.toLocaleString("ar-EG") + ' ج.م';
 }
 
@@ -617,8 +827,16 @@ window.confirmPhoneAndSend = function () {
     else if (branch === 'minya_new') waNumber = '201005551898';
     else if (branch === 'fayoum') waNumber = '201020040656';
 
-    const billingItemsPayload = cart.map(item => `• ${item.name} [العدد: ${item.quantity}] = ${(item.price * item.quantity).toLocaleString("ar-EG")} ج.م`).join('\n');
-    const calculatedTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    const billingItemsPayload = cart.map(item => {
+        const validOffer = validateOffer(item.offer);
+        const itemPrice = validOffer ? getDiscountedPrice(item.price, item.offer) : item.price;
+        const offerText = validOffer ? ` (${getOfferBadgeText(validOffer)})` : '';
+        return `• ${item.name}${offerText} [العدد: ${item.quantity}] = ${(itemPrice * item.quantity).toLocaleString("ar-EG")} ج.م`;
+    }).join('\n');
+    const calculatedTotal = cart.reduce((sum, item) => {
+        const itemPrice = validateOffer(item.offer) ? getDiscountedPrice(item.price, item.offer) : item.price;
+        return sum + (itemPrice * item.quantity);
+    }, 0);
     const contextNotes = document.getElementById('customerNotes')?.value.trim();
     const orderType = document.querySelector('input[name="orderType"]:checked');
 

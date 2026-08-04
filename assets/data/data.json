@@ -1,534 +1,542 @@
 {
+  "offer": {
+    "active": true,
+    "title": "عرض الصيف المميز خصم",
+    "percentage": 0,
+    "amount": 20,
+    "startDate": "2026-08-04T00:00:00",
+    "endDate": "2026-09-05T23:59:59",
+    "durationHours": 720
+  },
   "products": [
-   {
-  "id": 1,
-  "category": "بالقطعة",
-  "name": "فستقية",
-  "price": 120,
-  "image": "https://i.ibb.co/21Js1xLG/Whats-App-Image-2026-08-04-at-3-57-20-AM.jpg",
-  "badge": "مميز"
-},
-{
-  "id": 2,
-  "category": "بالقطعة",
-  "name": "كاجو",
-  "price": 80,
-  "image": "https://i.ibb.co/NgdBmJGH/Whats-App-Image-2026-08-04-at-3-57-23-AM-1.jpg",
-  "badge": ""
-},
-{
-  "id": 3,
-  "category": "بالقطعة",
-  "name": "لوزية",
-  "price": 70,
-  "image": "https://i.ibb.co/KpxtkRXh/Whats-App-Image-2026-08-04-at-6-51-52-PM.jpg",
-  "badge": ""
-},
-{
-  "id": 4,
-  "category": "بالقطعة",
-  "name": "بندقية",
-  "price": 80,
-  "image": "https://i.ibb.co/nN67J8kf/Whats-App-Image-2026-08-04-at-6-51-51-PM.jpg",
-  "badge": ""
-},
-{
-  "id": 5,
-  "category": "بالقطعة",
-  "name": "حمام مكسرات جامبو",
-  "price": 55,
-  "image": "https://i.ibb.co/pjYPdbvk/Whats-App-Image-2026-08-04-at-6-51-53-PM.jpg",
-  "badge": ""
-},
-{
-  "id": 6,
-  "category": "بالقطعة",
-  "name": "لديدة مكسرات جامبو",
-  "price": 55,
-  "image": "https://i.ibb.co/Wp6204RQ/Whats-App-Image-2026-08-04-at-6-51-48-PM.jpg",
-  "badge": "فاخر"
-},
-{
-  "id": 7,
-  "category": "بالقطعة",
-  "name": "قرص مخصوص مكسرات",
-  "price": 55,
-  "image": "https://i.ibb.co/MWhVnQP/Whats-App-Image-2026-08-04-at-6-51-48-PM-1.jpg",
-  "badge": ""
-},
-  
     {
-  "id": 19,
-  "category": "بالكيلو",
-  "name": "دومية فول",
-  "price": 175,
-  "image": "https://i.ibb.co/Ld3WsbQP/IMG-1503.jpg",
-  "badge": ""
-},
-{
-  "id": 20,
-  "category": "بالكيلو",
-  "name": "ملبن سادة",
-  "price": 175,
-  "image": "https://i.ibb.co/3yXY3W2r/IMG-1442.jpg",
-  "badge": ""
-},
-{
-  "id": 21,
-  "category": "بالكيلو",
-  "name": "ملبن جيلي صفر",
-  "price": 175,
-  "image": "https://i.ibb.co/5W9MhP9C/IMG-1629.jpg",
-  "badge": ""
-},
-{
-  "id": 22,
-  "category": "بالكيلو",
-  "name": "ملبن رش فول",
-  "price": 175,
-  "image": "https://i.ibb.co/MD3kDj7q/IMG-1545.jpg",
-  "badge": ""
-},
-{
-  "id": 23,
-  "category": "بالكيلو",
-  "name": "ملبن رش زبيب",
-  "price": 175,
-  "image": "https://i.ibb.co/y2dhjF4/IMG-1548.jpg",
-  "badge": "الأكثر مبيعاً"
-},
-{
-  "id": 24,
-  "category": "بالكيلو",
-  "name": "نوجا سادة",
-  "price": 175,
-  "image": "https://i.ibb.co/4wstQsT4/IMG-1617.jpg",
-  "badge": ""
-},
-{
-  "id": 25,
-  "category": "بالكيلو",
-  "name": "مدور فول 8 سم",
-  "price": 175,
-  "image": "https://i.ibb.co/LzkqWLbJ/Whats-App-Image-2026-08-04-at-3-57-10-AM.jpg",
-  "badge": ""
-},
-{
-  "id": 26,
-  "category": "بالكيلو",
-  "name": "مدور حمص 8 سم",
-  "price": 175,
-  "image": "https://i.ibb.co/r2Y2Qttq/IMG-1466.jpg",
-  "badge": ""
-},
-{
-  "id": 27,
-  "category": "بالكيلو",
-  "name": "مدور سمسم 8 سم",
-  "price": 175,
-  "image": "https://i.ibb.co/DfTgDCmh/IMG-1407-2.jpg",
-  "badge": ""
-},
-{
-  "id": 28,
-  "category": "بالكيلو",
-  "name": "راحة فول",
-  "price": 175,
-  "image": "https://i.ibb.co/LdBT3WRj/IMG-1388.jpg",
-  "badge": ""
-},
-{
-  "id": 29,
-  "category": "بالكيلو",
-  "name": "راحة سمسم",
-  "price": 175,
-  "image": "https://i.ibb.co/chRQRzmx/Whats-App-Image-2026-08-04-at-7-48-34-PM.jpg",
-  "badge": ""
+      "id": 1,
+      "category": "بالقطعة",
+      "name": "فستقية",
+      "price": 120,
+      "image": "https://i.ibb.co/21Js1xLG/Whats-App-Image-2026-08-04-at-3-57-20-AM.jpg",
+      "badge": "مميز"
     },
     {
-  "id": 100,
-  "category": "بالكيلو",
-  "name": "مشبك ",
-  "price": 160,
-  "image": "https://i.ibb.co/bgYtSFtV/IMG-1390.jpg",
-  "badge": ""
+      "id": 2,
+      "category": "بالقطعة",
+      "name": "كاجو",
+      "price": 80,
+      "image": "https://i.ibb.co/NgdBmJGH/Whats-App-Image-2026-08-04-at-3-57-23-AM-1.jpg",
+      "badge": ""
     },
     {
-  "id": 30,
-  "category": "بالكيلو",
-  "name": "سمسمية ديسباسيتو",
-  "price": 300,
-  "image": "https://i.ibb.co/zh8LPZ3d/Whats-App-Image-2026-08-04-at-6-51-52-PM-1.jpg",
-  "badge": ""
-},
-{
-  "id": 31,
-  "category": "بالكيلو",
-  "name": "حمصية ديسباسيتو",
-  "price": 300,
-  "image": "https://i.ibb.co/mnGwYkj/IMG-1523.jpg",
-  "badge": ""
-},
-{
-  "id": 32,
-  "category": "بالكيلو",
-  "name": "فولية ديسباسيتو",
-  "price": 300,
-  "image": "https://i.ibb.co/LdBT3WRj/IMG-1388.jpg",
-  "badge": ""
-},
-{
-  "id": 33,
-  "category": "بالكيلو",
-  "name": "بورما جوز هند فول",
-  "price": 300,
-  "image": "https://i.ibb.co/LX6Hk1NB/Whats-App-Image-2026-08-04-at-3-57-41-AM.jpg",
-  "badge": ""
-},
-{
-  "id": 34,
-  "category": "بالكيلو",
-  "name": "ساندويتش ديسباسيتو زبيب",
-  "price": 300,
-  "image": "https://i.ibb.co/CpxGtPWK/Whats-App-Image-2026-08-04-at-7-48-27-PM.jpg",
-  "badge": ""
-},
-{
-  "id": 35,
-  "category": "بالكيلو",
-  "name": "ساندويتش فول ديسباسيتو",
-  "price": 300,
-  "image": "https://i.ibb.co/CpxGtPWK/Whats-App-Image-2026-08-04-at-7-48-27-PM.jpg",
-  "badge": ""
-},
-{
-  "id": 36,
-  "category": "بالكيلو",
-  "name": "قشطة سادة",
-  "price": 300,
-  "image": "https://i.ibb.co/hRfppsJc/Whats-App-Image-2026-08-04-at-6-56-05-PM-2.jpg",
-  "badge": ""
-},
-{
-  "id": 37,
-  "category": "بالكيلو",
-  "name": "مربى جوز هند زبيب",
-  "price": 300,
-  "image": "https://i.ibb.co/xqCn3hFV/IMG-1530.jpg",
-  "badge": ""
-},
-{
-  "id": 38,
-  "category": "بالكيلو",
-  "name": "قشطة زبيب",
-  "price": 300,
-  "image": "https://i.ibb.co/qMp07S8Q/IMG-1533.jpg",
-  "badge": ""
-},
-{
-  "id": 39,
-  "category": "بالكيلو",
-  "name": "قشطة فول",
-  "price": 300,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 40,
-  "category": "بالكيلو",
-  "name": "بورما جوز هند زبيب",
-  "price": 300,
-  "image": "https://i.ibb.co/B27s4GHM/Whats-App-Image-2026-08-04-at-3-57-48-AM.jpg",
-  "badge": ""
-},
+      "id": 3,
+      "category": "بالقطعة",
+      "name": "لوزية",
+      "price": 70,
+      "image": "https://i.ibb.co/KpxtkRXh/Whats-App-Image-2026-08-04-at-6-51-52-PM.jpg",
+      "badge": ""
+    },
     {
-  "id": 41,
-  "category": "بالكيلو",
-  "name": "ملبن رش لوز",
-  "price": 400,
-  "image": "https://i.ibb.co/x8XfJCX3/Whats-App-Image-2026-08-04-at-3-57-48-AM-1.jpg",
-  "badge": ""
-},
-{
-  "id": 42,
-  "category": "بالكيلو",
-  "name": "ملبن رش كاجو",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 43,
-  "category": "بالكيلو",
-  "name": "بورما فخفخينا فول",
-  "price": 400,
-  "image": "https://i.ibb.co/0RnxXsYt/Whats-App-Image-2026-08-04-at-3-57-07-AM.jpg",
-  "badge": ""
-},
-{
-  "id": 44,
-  "category": "بالكيلو",
-  "name": "بورما فخفخينا زبيب",
-  "price": 400,
-  "image": "https://i.ibb.co/gFdLvNpD/Whats-App-Image-2026-08-04-at-3-58-13-AM-1.jpg",
-  "badge": ""
-},
-{
-  "id": 45,
-  "category": "بالكيلو",
-  "name": "ساندويتش فخفخينا زبيب",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 46,
-  "category": "بالكيلو",
-  "name": "ساندويتش فخفخينا فول",
-  "price": 400,
-  "image": "https://i.ibb.co/SwB9QY3n/Whats-App-Image-2026-08-04-at-3-57-41-AM-2.jpg",
-  "badge": ""
-},
-{
-  "id": 47,
-  "category": "بالكيلو",
-  "name": "مربى جوز هند لوز",
-  "price": 400,
-  "image": "https://i.ibb.co/svrnWTCk/Whats-App-Image-2026-08-04-at-3-57-09-AM.jpg",
-  "badge": ""
-},
-{
-  "id": 48,
-  "category": "بالكيلو",
-  "name": "ملبن رش بندق",
-  "price": 400,
-  "image": "https://i.ibb.co/5XyS2vf9/Whats-App-Image-2026-08-04-at-3-58-10-AM.jpg",
-  "badge": ""
-},
-{
-  "id": 49,
-  "category": "بالكيلو",
-  "name": "دومية بندق",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 50,
-  "category": "بالكيلو",
-  "name": "نوجا لوز قمر الدين",
-  "price": 400,
-  "image": "https://i.ibb.co/gZg0Z9zr/IMG-1598.jpg",
-  "badge": ""
-},
-{
-  "id": 51,
-  "category": "بالكيلو",
-  "name": "ملبن رش فستق",
-  "price": 400,
-  "image": "https://i.ibb.co/0yXmpDgP/Whats-App-Image-2026-08-04-at-7-48-42-PM.jpg",
-  "badge": ""
-},
-{
-  "id": 52,
-  "category": "بالكيلو",
-  "name": "مربى جوز هند بندق",
-  "price": 400,
-  "image": "https://i.ibb.co/dwjJH85L/Whats-App-Image-2026-08-04-at-3-58-01-AM.jpg",
-  "badge": ""
-},
-{
-  "id": 53,
-  "category": "بالكيلو",
-  "name": "فخفخينا مكسرات",
-  "price": 400,
-  "image": "https://i.ibb.co/0RJdYXNd/IMG-1577.jpg",
-  "badge": ""
-},
-{
-  "id": 54,
-  "category": "بالكيلو",
-  "name": "قشطة لوز",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 55,
-  "category": "بالكيلو",
-  "name": "لديدة 50 جرام",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 56,
-  "category": "بالكيلو",
-  "name": "حمام 50 جرام",
-  "price": 400,
-  "image": "https://i.ibb.co/kNkJ7Tw/IMG-1620.jpg",
-  "badge": ""
-},
-{
-  "id": 57,
-  "category": "بالكيلو",
-  "name": "قشطة بندق",
-  "price": 400,
-  "image": "https://i.ibb.co/tpKs73NP/Whats-App-Image-2026-08-04-at-6-56-05-PM-1.jpg",
-  "badge": ""
-},
-{
-  "id": 58,
-  "category": "بالكيلو",
-  "name": "قشطة فستق",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 59,
-  "category": "بالكيلو",
-  "name": "فولية كريمة",
-  "price": 400,
-  "image": "https://i.ibb.co/Rk3wsDS1/Whats-App-Image-2026-08-04-at-6-56-05-PM.jpg",
-  "badge": ""
-},
-{
-  "id": 60,
-  "category": "بالكيلو",
-  "name": "سمسمية كريمة",
-  "price": 400,
-  "image": "https://i.ibb.co/nMZsdJJL/Whats-App-Image-2026-08-04-at-6-56-04-PM.jpg",
-  "badge": ""
-},
+      "id": 4,
+      "category": "بالقطعة",
+      "name": "بندقية",
+      "price": 80,
+      "image": "https://i.ibb.co/nN67J8kf/Whats-App-Image-2026-08-04-at-6-51-51-PM.jpg",
+      "badge": ""
+    },
     {
-  "id": 61,
-  "category": "بالكيلو",
-  "name": "قشطة شيكولاتة",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 62,
-  "category": "بالكيلو",
-  "name": "قشطة لوتس",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 63,
-  "category": "بالكيلو",
-  "name": "قشطة رافايلو",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 64,
-  "category": "بالكيلو",
-  "name": "بسيمة ديسباسيتو",
-  "price": 400,
-  "image": "https://i.ibb.co/YFddCj8H/Whats-App-Image-2026-08-04-at-3-57-03-AM.jpg",
-  "badge": ""
-},
-{
-  "id": 65,
-  "category": "بالكيلو",
-  "name": "نوجا قمر الدين بندق",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 66,
-  "category": "بالكيلو",
-  "name": "بسيمة لوز",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 67,
-  "category": "بالكيلو",
-  "name": "بسيمة بندق",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 68,
-  "category": "بالكيلو",
-  "name": "شكلمة كريمة",
-  "price": 400,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 69,
-  "category": "بالكيلو",
-  "name": "شكلمة ديسباسيتو",
-  "price": 400,
-  "image": "https://i.ibb.co/xSBDtYLY/IMG-1439.jpg",
-  "badge": ""
-},
-{
-  "id": 70,
-  "category": "بالكيلو",
-  "name": "شكلمة شيكولاتة",
-  "price": 400,
-  "image": "https://i.ibb.co/yncsntbM/Whats-App-Image-2026-08-04-at-6-51-49-PM.jpg",
-  "badge": ""
-},
-{
-  "id": 71,
-  "category": "بالكيلو",
-  "name": "نوجا من وسلوى",
-  "price": 400,
-  "image": "https://i.ibb.co/5hnTpQNf/Whats-App-Image-2026-08-04-at-6-56-05-PM-3.jpg",
-  "badge": ""
-},
-{
-  "id": 72,
-  "category": "بالكيلو",
-  "name": "ملبن حبل مخصوص",
-  "price": 460,
-  "image": "https://i.ibb.co/Y7KtZzLg/IMG-1405.jpg",
-  "badge": ""
-},
-{
-  "id": 73,
-  "category": "بالكيلو",
-  "name": "نوجا قمر الدين فستق",
-  "price": 460,
-  "image": "https://i.ibb.co/pvnRFyBs/IMG-1569.jpg",
-  "badge": ""
-},
-{
-  "id": 74,
-  "category": "بالكيلو",
-  "name": "نوجا رش بندق",
-  "price": 460,
-  "image": "https://i.ibb.co/5XTKdC61/Whats-App-Image-2026-08-04-at-7-48-26-PM.jpg",
-  "badge": ""
-},
-{
-  "id": 75,
-  "category": "بالكيلو",
-  "name": "نوجا رش لوز",
-  "price": 460,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
-{
-  "id": 76,
-  "category": "بالكيلو",
-  "name": "قشطة مغطس كنافة فستق",
-  "price": 460,
-  "image": "assets/images/mawlid.jpg",
-  "badge": ""
-},
+      "id": 5,
+      "category": "بالقطعة",
+      "name": "حمام مكسرات جامبو",
+      "price": 55,
+      "image": "https://i.ibb.co/pjYPdbvk/Whats-App-Image-2026-08-04-at-6-51-53-PM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 6,
+      "category": "بالقطعة",
+      "name": "لديدة مكسرات جامبو",
+      "price": 55,
+      "image": "https://i.ibb.co/Wp6204RQ/Whats-App-Image-2026-08-04-at-6-51-48-PM.jpg",
+      "badge": "فاخر"
+    },
+    {
+      "id": 7,
+      "category": "بالقطعة",
+      "name": "قرص مخصوص مكسرات",
+      "price": 55,
+      "image": "https://i.ibb.co/MWhVnQP/Whats-App-Image-2026-08-04-at-6-51-48-PM-1.jpg",
+      "badge": ""
+    },
+    {
+      "id": 19,
+      "category": "بالكيلو",
+      "name": "دومية فول",
+      "price": 175,
+      "image": "https://i.ibb.co/Ld3WsbQP/IMG-1503.jpg",
+      "badge": ""
+    },
+    {
+      "id": 20,
+      "category": "بالكيلو",
+      "name": "ملبن سادة",
+      "price": 175,
+      "image": "https://i.ibb.co/3yXY3W2r/IMG-1442.jpg",
+      "badge": ""
+    },
+    {
+      "id": 21,
+      "category": "بالكيلو",
+      "name": "ملبن جيلي صفر",
+      "price": 175,
+      "image": "https://i.ibb.co/5W9MhP9C/IMG-1629.jpg",
+      "badge": ""
+    },
+    {
+      "id": 22,
+      "category": "بالكيلو",
+      "name": "ملبن رش فول",
+      "price": 175,
+      "image": "https://i.ibb.co/MD3kDj7q/IMG-1545.jpg",
+      "badge": ""
+    },
+    {
+      "id": 23,
+      "category": "بالكيلو",
+      "name": "ملبن رش زبيب",
+      "price": 175,
+      "image": "https://i.ibb.co/y2dhjF4/IMG-1548.jpg",
+      "badge": "الأكثر مبيعاً"
+    },
+    {
+      "id": 24,
+      "category": "بالكيلو",
+      "name": "نوجا سادة",
+      "price": 175,
+      "image": "https://i.ibb.co/4wstQsT4/IMG-1617.jpg",
+      "badge": ""
+    },
+    {
+      "id": 25,
+      "category": "بالكيلو",
+      "name": "مدور فول 8 سم",
+      "price": 175,
+      "image": "https://i.ibb.co/LzkqWLbJ/Whats-App-Image-2026-08-04-at-3-57-10-AM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 26,
+      "category": "بالكيلو",
+      "name": "مدور حمص 8 سم",
+      "price": 175,
+      "image": "https://i.ibb.co/r2Y2Qttq/IMG-1466.jpg",
+      "badge": ""
+    },
+    {
+      "id": 27,
+      "category": "بالكيلو",
+      "name": "مدور سمسم 8 سم",
+      "price": 175,
+      "image": "https://i.ibb.co/DfTgDCmh/IMG-1407-2.jpg",
+      "badge": ""
+    },
+    {
+      "id": 28,
+      "category": "بالكيلو",
+      "name": "راحة فول",
+      "price": 175,
+      "image": "https://i.ibb.co/LdBT3WRj/IMG-1388.jpg",
+      "badge": ""
+    },
+    {
+      "id": 29,
+      "category": "بالكيلو",
+      "name": "راحة سمسم",
+      "price": 175,
+      "image": "https://i.ibb.co/chRQRzmx/Whats-App-Image-2026-08-04-at-7-48-34-PM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 100,
+      "category": "بالكيلو",
+      "name": "مشبك ",
+      "price": 160,
+      "image": "https://i.ibb.co/bgYtSFtV/IMG-1390.jpg",
+      "badge": ""
+    },
+    {
+      "id": 30,
+      "category": "بالكيلو",
+      "name": "سمسمية ديسباسيتو",
+      "price": 300,
+      "image": "https://i.ibb.co/zh8LPZ3d/Whats-App-Image-2026-08-04-at-6-51-52-PM-1.jpg",
+      "badge": ""
+    },
+    {
+      "id": 31,
+      "category": "بالكيلو",
+      "name": "حمصية ديسباسيتو",
+      "price": 300,
+      "image": "https://i.ibb.co/mnGwYkj/IMG-1523.jpg",
+      "badge": ""
+    },
+    {
+      "id": 32,
+      "category": "بالكيلو",
+      "name": "فولية ديسباسيتو",
+      "price": 300,
+      "image": "https://i.ibb.co/LdBT3WRj/IMG-1388.jpg",
+      "badge": ""
+    },
+    {
+      "id": 33,
+      "category": "بالكيلو",
+      "name": "بورما جوز هند فول",
+      "price": 300,
+      "image": "https://i.ibb.co/LX6Hk1NB/Whats-App-Image-2026-08-04-at-3-57-41-AM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 34,
+      "category": "بالكيلو",
+      "name": "ساندويتش ديسباسيتو زبيب",
+      "price": 300,
+      "image": "https://i.ibb.co/CpxGtPWK/Whats-App-Image-2026-08-04-at-7-48-27-PM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 35,
+      "category": "بالكيلو",
+      "name": "ساندويتش فول ديسباسيتو",
+      "price": 300,
+      "image": "https://i.ibb.co/CpxGtPWK/Whats-App-Image-2026-08-04-at-7-48-27-PM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 36,
+      "category": "بالكيلو",
+      "name": "قشطة سادة",
+      "price": 300,
+      "image": "https://i.ibb.co/hRfppsJc/Whats-App-Image-2026-08-04-at-6-56-05-PM-2.jpg",
+      "badge": ""
+    },
+    {
+      "id": 37,
+      "category": "بالكيلو",
+      "name": "مربى جوز هند زبيب",
+      "price": 300,
+      "image": "https://i.ibb.co/xqCn3hFV/IMG-1530.jpg",
+      "badge": ""
+    },
+    {
+      "id": 38,
+      "category": "بالكيلو",
+      "name": "قشطة زبيب",
+      "price": 300,
+      "image": "https://i.ibb.co/qMp07S8Q/IMG-1533.jpg",
+      "badge": ""
+    },
+    {
+      "id": 39,
+      "category": "بالكيلو",
+      "name": "قشطة فول",
+      "price": 300,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 40,
+      "category": "بالكيلو",
+      "name": "بورما جوز هند زبيب",
+      "price": 300,
+      "image": "https://i.ibb.co/B27s4GHM/Whats-App-Image-2026-08-04-at-3-57-48-AM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 41,
+      "category": "بالكيلو",
+      "name": "ملبن رش لوز",
+      "price": 400,
+      "image": "https://i.ibb.co/x8XfJCX3/Whats-App-Image-2026-08-04-at-3-57-48-AM-1.jpg",
+      "badge": ""
+    },
+    {
+      "id": 42,
+      "category": "بالكيلو",
+      "name": "ملبن رش كاجو",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 43,
+      "category": "بالكيلو",
+      "name": "بورما فخفخينا فول",
+      "price": 400,
+      "image": "https://i.ibb.co/0RnxXsYt/Whats-App-Image-2026-08-04-at-3-57-07-AM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 44,
+      "category": "بالكيلو",
+      "name": "بورما فخفخينا زبيب",
+      "price": 400,
+      "image": "https://i.ibb.co/gFdLvNpD/Whats-App-Image-2026-08-04-at-3-58-13-AM-1.jpg",
+      "badge": ""
+    },
+    {
+      "id": 45,
+      "category": "بالكيلو",
+      "name": "ساندويتش فخفخينا زبيب",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 46,
+      "category": "بالكيلو",
+      "name": "ساندويتش فخفخينا فول",
+      "price": 400,
+      "image": "https://i.ibb.co/SwB9QY3n/Whats-App-Image-2026-08-04-at-3-57-41-AM-2.jpg",
+      "badge": ""
+    },
+    {
+      "id": 47,
+      "category": "بالكيلو",
+      "name": "مربى جوز هند لوز",
+      "price": 400,
+      "image": "https://i.ibb.co/svrnWTCk/Whats-App-Image-2026-08-04-at-3-57-09-AM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 48,
+      "category": "بالكيلو",
+      "name": "ملبن رش بندق",
+      "price": 400,
+      "image": "https://i.ibb.co/5XyS2vf9/Whats-App-Image-2026-08-04-at-3-58-10-AM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 49,
+      "category": "بالكيلو",
+      "name": "دومية بندق",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 50,
+      "category": "بالكيلو",
+      "name": "نوجا لوز قمر الدين",
+      "price": 400,
+      "image": "https://i.ibb.co/gZg0Z9zr/IMG-1598.jpg",
+      "badge": ""
+    },
+    {
+      "id": 51,
+      "category": "بالكيلو",
+      "name": "ملبن رش فستق",
+      "price": 400,
+      "image": "https://i.ibb.co/0yXmpDgP/Whats-App-Image-2026-08-04-at-7-48-42-PM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 52,
+      "category": "بالكيلو",
+      "name": "مربى جوز هند بندق",
+      "price": 400,
+      "image": "https://i.ibb.co/dwjJH85L/Whats-App-Image-2026-08-04-at-3-58-01-AM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 53,
+      "category": "بالكيلو",
+      "name": "فخفخينا مكسرات",
+      "price": 400,
+      "image": "https://i.ibb.co/0RJdYXNd/IMG-1577.jpg",
+      "badge": ""
+    },
+    {
+      "id": 54,
+      "category": "بالكيلو",
+      "name": "قشطة لوز",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 55,
+      "category": "بالكيلو",
+      "name": "لديدة 50 جرام",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 56,
+      "category": "بالكيلو",
+      "name": "حمام 50 جرام",
+      "price": 400,
+      "image": "https://i.ibb.co/kNkJ7Tw/IMG-1620.jpg",
+      "badge": ""
+    },
+    {
+      "id": 57,
+      "category": "بالكيلو",
+      "name": "قشطة بندق",
+      "price": 400,
+      "image": "https://i.ibb.co/tpKs73NP/Whats-App-Image-2026-08-04-at-6-56-05-PM-1.jpg",
+      "badge": ""
+    },
+    {
+      "id": 58,
+      "category": "بالكيلو",
+      "name": "قشطة فستق",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 59,
+      "category": "بالكيلو",
+      "name": "فولية كريمة",
+      "price": 400,
+      "image": "https://i.ibb.co/Rk3wsDS1/Whats-App-Image-2026-08-04-at-6-56-05-PM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 60,
+      "category": "بالكيلو",
+      "name": "سمسمية كريمة",
+      "price": 400,
+      "image": "https://i.ibb.co/nMZsdJJL/Whats-App-Image-2026-08-04-at-6-56-04-PM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 61,
+      "category": "بالكيلو",
+      "name": "قشطة شيكولاتة",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 62,
+      "category": "بالكيلو",
+      "name": "قشطة لوتس",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 63,
+      "category": "بالكيلو",
+      "name": "قشطة رافايلو",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 64,
+      "category": "بالكيلو",
+      "name": "بسيمة ديسباسيتو",
+      "price": 400,
+      "image": "https://i.ibb.co/YFddCj8H/Whats-App-Image-2026-08-04-at-3-57-03-AM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 65,
+      "category": "بالكيلو",
+      "name": "نوجا قمر الدين بندق",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 66,
+      "category": "بالكيلو",
+      "name": "بسيمة لوز",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 67,
+      "category": "بالكيلو",
+      "name": "بسيمة بندق",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 68,
+      "category": "بالكيلو",
+      "name": "شكلمة كريمة",
+      "price": 400,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 69,
+      "category": "بالكيلو",
+      "name": "شكلمة ديسباسيتو",
+      "price": 400,
+      "image": "https://i.ibb.co/xSBDtYLY/IMG-1439.jpg",
+      "badge": ""
+    },
+    {
+      "id": 70,
+      "category": "بالكيلو",
+      "name": "شكلمة شيكولاتة",
+      "price": 400,
+      "image": "https://i.ibb.co/yncsntbM/Whats-App-Image-2026-08-04-at-6-51-49-PM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 71,
+      "category": "بالكيلو",
+      "name": "نوجا من وسلوى",
+      "price": 400,
+      "image": "https://i.ibb.co/5hnTpQNf/Whats-App-Image-2026-08-04-at-6-56-05-PM-3.jpg",
+      "badge": ""
+    },
+    {
+      "id": 72,
+      "category": "بالكيلو",
+      "name": "ملبن حبل مخصوص",
+      "price": 460,
+      "image": "https://i.ibb.co/Y7KtZzLg/IMG-1405.jpg",
+      "badge": ""
+    },
+    {
+      "id": 73,
+      "category": "بالكيلو",
+      "name": "نوجا قمر الدين فستق",
+      "price": 460,
+      "image": "https://i.ibb.co/pvnRFyBs/IMG-1569.jpg",
+      "badge": ""
+    },
+    {
+      "id": 74,
+      "category": "بالكيلو",
+      "name": "نوجا رش بندق",
+      "price": 460,
+      "image": "https://i.ibb.co/5XTKdC61/Whats-App-Image-2026-08-04-at-7-48-26-PM.jpg",
+      "badge": ""
+    },
+    {
+      "id": 75,
+      "category": "بالكيلو",
+      "name": "نوجا رش لوز",
+      "price": 460,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
+    {
+      "id": 76,
+      "category": "بالكيلو",
+      "name": "قشطة مغطس كنافة فستق",
+      "price": 460,
+      "image": "assets/images/mawlid.jpg",
+      "badge": ""
+    },
     {
       "id": 55,
       "category": "بالعلبة",
