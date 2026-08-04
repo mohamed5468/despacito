@@ -5,9 +5,9 @@
   "percentage": 10,
   "amount": 0,
   "startDate": "2026-08-04T00:00:00",
-  "endDate": "2026-09-05T23:59:59",
-  "durationHours": 720
-},
+  "endDate": "2026-08-14T23:59:59",
+  "durationHours": 240
+}
   "products": [
     {
       "id": 1,
