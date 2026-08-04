@@ -1,13 +1,13 @@
 {
-  "offer": {
-    "active": false,
-    "title": "عرض الصيف المميز خصم",
-    "percentage": 0,
-    "amount": 20,
-    "startDate": "2026-08-04T00:00:00",
-    "endDate": "2026-09-05T23:59:59",
-    "durationHours": 720
-  },
+"offer": {
+  "active": true,
+  "title": "عرض حلاوة المولد 🎉 خصم 10%",
+  "percentage": 10,
+  "amount": 0,
+  "startDate": "2026-08-04T00:00:00",
+  "endDate": "2026-09-05T23:59:59",
+  "durationHours": 720
+},
   "products": [
     {
       "id": 1,
