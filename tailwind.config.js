@@ -15,9 +15,8 @@
                 graystone: "#8B7B7E"
               },
               fontFamily: {
-
-                 'cairo': ['Aref Ruqaa', 'serif'],
-                              'dmserif': ['Aref Ruqaa', 'serif']
+                 'cairo': ['Cairo', 'sans-serif'],
+                 'dmserif': ['Cairo', 'sans-serif']
               },
               boxShadow: {
                 'luxury-sm': '0 4px 20px rgba(61, 43, 51, 0.03)',

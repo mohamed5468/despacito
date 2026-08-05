@@ -1,13 +1,13 @@
 {
-"offer": {
-  "active": true,
-  "title": "عرض حلاوة المولد 🎉 خصم 10%",
-  "percentage": 10,
-  "amount": 0,
-  "startDate": "2026-08-04T00:00:00",
-  "endDate": "2026-08-14T23:59:59",
-  "durationHours": 240
-},
+  "offer": {
+    "active": true,
+    "title": "عرض الصيف المميز خصم",
+    "percentage": 0,
+    "amount": 20,
+    "startDate": "2026-08-04T00:00:00",
+    "endDate": "2026-09-05T23:59:59",
+    "durationHours": 720
+  },
   "products": [
     {
       "id": 1,
@@ -84,7 +84,7 @@
     {
       "id": 21,
       "category": "بالكيلو",
-      "name": "ملبن جيلي أصفر",
+      "name": "ملبن جيلي صفر",
       "price": 175,
       "image": "https://i.ibb.co/5W9MhP9C/IMG-1629.jpg",
       "badge": ""
@@ -1390,7 +1390,7 @@
       "category": "بالعلبة",
       "name": "صينية المولد",
       "price": 1700,
-      "image": "assets/images/mawlid.jpg",
+      "image": "",
       "badge": ""
     },
     {
@@ -1398,7 +1398,7 @@
       "category": "بالعلبة",
       "name": "صندوق حلاوة المولد",
       "price": 1700,
-      "image": "assets/images/mawlid.jpg",
+      "image": "",
       "badge": ""
     },
     {
