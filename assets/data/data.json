@@ -1,12 +1,12 @@
 {
   "offer": {
     "active": true,
-    "title": "عرض الصيف المميز خصم",
-    "percentage": 0,
-    "amount": 20,
+    "title": "عرض المولد النبوي الشريف خصم",
+    "percentage": 10,
+    "amount": 0,
     "startDate": "2026-08-04T00:00:00",
-    "endDate": "2026-09-05T23:59:59",
-    "durationHours": 720
+    "endDate": "2026-08-15T23:59:59",
+    "durationHours": 252
   },
   "products": [
     {
