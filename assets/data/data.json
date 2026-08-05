@@ -262,7 +262,7 @@
       "category": "بالكيلو",
       "name": "ملبن رش كاجو",
       "price": 400,
-      "image": "assets/images/mawlid.jpg",
+      "image": "https://i.ibb.co/PGRCCsPV/10841eee-0efe-4350-a109-c8a5878f232f.jpg",
       "badge": ""
     },
     {
@@ -318,7 +318,7 @@
       "category": "بالكيلو",
       "name": "دومية بندق",
       "price": 400,
-      "image": "assets/images/mawlid.jpg",
+      "image": "https://i.ibb.co/zDtwM0H/d4347638-db0b-4627-964c-5837c5540e75.jpg",
       "badge": ""
     },
     {
@@ -454,7 +454,7 @@
       "category": "بالكيلو",
       "name": "بسيمة لوز",
       "price": 400,
-      "image": "assets/images/mawlid.jpg",
+      "image": "https://i.ibb.co/DH1xZxnY/87994853-254e-47f7-b14d-1b28506ddfd4.jpg",
       "badge": ""
     },
     {
@@ -1358,7 +1358,7 @@
       "category": "بالعلبة",
       "name": "علبة معدن مستطيل وسط",
       "price": 1000,
-      "image": "assets/images/box-round-tin.jpg",
+      "image": "assets/images/box-vib.jpg",
       "badge": ""
     },
     {
@@ -1366,7 +1366,7 @@
       "category": "بالعلبة",
       "name": "علبة معدن مستطيل كبير",
       "price": 1500,
-      "image": "assets/images/box-round-tin.jpg",
+      "image": "assets/images/box-vib.jpg",
       "badge": ""
     },
     {
@@ -1422,7 +1422,7 @@
       "category": "بالعلبة",
       "name": "صندوق نحاس",
       "price": 3700,
-      "image": "assets/images/box-brass.jpg",
+      "image": "https://i.ibb.co/Q7Q8YqTZ/672f5bf2-6a22-42de-8689-344fdf980b47.jpg",
       "badge": "فاخرة"
     },
     {
@@ -1430,7 +1430,7 @@
       "category": "بالعلبة",
       "name": "علبة VIB",
       "price": 2250,
-      "image": "assets/images/box-vib.jpg",
+      "image": "https://i.ibb.co/zDtwM0H/d4347638-db0b-4627-964c-5837c5540e75.jpg",
       "badge": "VIP"
     },
     {
