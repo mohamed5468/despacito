@@ -851,7 +851,7 @@ window.confirmPhoneAndSend = function () {
         deliveryInfo = '🏢 *طريقة الاستلام:* استلام من الفرع\n';
     }
 
-    const dispatchTextPayload = `🛍️ *طلب شراء جديد - ديسپاسيتو باتيسري*\n\n` +
+    const dispatchTextPayload = `🛍️ *طلب شراء جديد - ديسپاسيتو *\n\n` +
         `👤 *اسم العميل الكريم:* ${name}\n` +
         `📱 *رقم الجوال للتواصل:* ${phone}\n\n` +
         `${deliveryInfo}\n` +
