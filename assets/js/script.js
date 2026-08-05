@@ -826,6 +826,8 @@ window.confirmPhoneAndSend = function () {
     else if (branch === 'minya_corniche') waNumber = '201098255579';
     else if (branch === 'minya_new') waNumber = '201005551898';
     else if (branch === 'fayoum') waNumber = '201020040656';
+    else if (branch === 'tagamo3') waNumber = '201002719955';
+    else if (branch === 'maadi') waNumber = '201044007139';
 
     const billingItemsPayload = cart.map(item => {
         const validOffer = validateOffer(item.offer);
