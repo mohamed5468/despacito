@@ -44,7 +44,7 @@
     {
       "id": 5,
       "category": "بالقطعة",
-      "name": "حمام مكسرات جامبو",
+      "name": "حمام مكسرات ",
       "price": 55,
       "image": "https://i.ibb.co/pjYPdbvk/Whats-App-Image-2026-08-04-at-6-51-53-PM.jpg",
       "badge": ""
@@ -52,7 +52,7 @@
     {
       "id": 6,
       "category": "بالقطعة",
-      "name": "لديدة مكسرات جامبو",
+      "name": "لديدة مكسرات ",
       "price": 55,
       "image": "https://i.ibb.co/Wp6204RQ/Whats-App-Image-2026-08-04-at-6-51-48-PM.jpg",
       "badge": "فاخر"
@@ -1456,62 +1456,6 @@
       "price": 2200,
       "image": "assets/images/box-basket.jpg",
       "badge": "هدية"
-    },
-    {
-      "id": 78,
-      "category": "بالقطعة",
-      "name": "فستقية جامبو",
-      "price": 120,
-      "image": "assets/images/mawlid.jpg",
-      "badge": "مميز"
-    },
-    {
-      "id": 79,
-      "category": "بالقطعة",
-      "name": "كاجو جامبو",
-      "price": 80,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 80,
-      "category": "بالقطعة",
-      "name": "لوزية جامبو",
-      "price": 70,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 81,
-      "category": "بالقطعة",
-      "name": "بندقية جامبو",
-      "price": 80,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 82,
-      "category": "بالقطعة",
-      "name": "حمام مكسرات جامبو",
-      "price": 55,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 83,
-      "category": "بالقطعة",
-      "name": "لديدة مكسرات جامبو",
-      "price": 55,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
-    },
-    {
-      "id": 84,
-      "category": "بالقطعة",
-      "name": "قرص مخصوص مكسرات",
-      "price": 55,
-      "image": "assets/images/mawlid.jpg",
-      "badge": ""
     },
     {
       "id": 85,
